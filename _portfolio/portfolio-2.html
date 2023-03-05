@@ -32,7 +32,7 @@ collection: portfolio
     </div>
     <div style="height:700px;overflow: hidden;">
         <canvas id='cas' style="background-color:rgba(0,5,24,1);">浏览器不支持canvas</canvas>
-        <div class="city"><img src="/images/city.png" alt="" width="200"/></div>
+        <div class="city"><img src="/images/city.png" alt="" height="82" width="770"/></div>
         <img src="/images/moon.png" alt="" id="moon" style="visibility: hidden;" />
         <div style="display:none">
             <div class="shape">Love you</div>
@@ -43,7 +43,7 @@ collection: portfolio
     var ocas = document.createElement("canvas");
     var octx = ocas.getContext("2d");
     var ctx = canvas.getContext("2d");
-    ocas.width = canvas.width = window.innerWidth;
+    ocas.width = canvas.width = 770;
     ocas.height = canvas.height = 700;
     var bigbooms = [];
 
