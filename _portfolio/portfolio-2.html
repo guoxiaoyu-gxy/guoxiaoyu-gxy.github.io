@@ -254,7 +254,7 @@ collection: portfolio
 
     var Star = function(x,y,r){
         this.x = x;this.y=y;this.r=r;
-    }
+    };
     Star.prototype = {
         paint:function(){
             ctx.save();
@@ -264,7 +264,7 @@ collection: portfolio
             ctx.fill();
             ctx.restore();
         }
-    }
+    };
 
     var focallength = 250;
     var Frag = function(centerX , centerY , radius , color ,tx , ty){
