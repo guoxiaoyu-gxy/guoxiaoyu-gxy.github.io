@@ -88,7 +88,7 @@ collection: portfolio
         var y = event.clientY;
         var bigboom = new Boom(getRandom(canvas.width/3,canvas.width*2/3) ,2,"#FFF" , {x:x , y:y});
         bigbooms.push(bigboom)
-    }
+    };
 
     var Boom = function(x,r,c,boomArea,shape){
         this.booms = [];
