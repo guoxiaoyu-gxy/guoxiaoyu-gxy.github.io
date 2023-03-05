@@ -170,7 +170,7 @@ collection: portfolio
                 var dx = canvas.width/2-that.x;
                 var dy = canvas.height/2-that.y;
                 for(var i=0;i<dots.length;i++){
-                    color = {a:dots[i].a,b:dots[i].b,c:dots[i].c}
+                    color = {a:dots[i].a,b:dots[i].b,c:dots[i].c};
                     var x = dots[i].x;
                     var y = dots[i].y;
                     var radius = 1;
@@ -190,7 +190,7 @@ collection: portfolio
                 context.drawImage(img , canvas.width/2 - img.width/2 , canvas.height/2 - img.width/2);
                 dots = getimgData(canvas , context , dr);
                 callback(dots);
-            })
+            });
         }
         else {
             var text = ele.innerHTML;
@@ -247,7 +247,7 @@ collection: portfolio
             var y = Math.random()*2*canvas.height - canvas.height;
             var star = new Star(x , y , r);
             stars.push(star);
-            star.paint()
+            star.paint();
         }
 
     }
@@ -285,7 +285,7 @@ collection: portfolio
             ctx.beginPath();
             ctx.arc(this.x , this.y , this.radius , 0 , 2*Math.PI);
             ctx.fillStyle = "rgba("+this.color.a+","+this.color.b+","+this.color.c+",1)";
-            ctx.fill()
+            ctx.fill();
             ctx.restore();
         },
         moveTo:function(index){
@@ -313,14 +313,14 @@ collection: portfolio
             var y = getRandom(50 , 200);
             if(random){
                 var bigboom = new Boom(getRandom(canvas.width/3,canvas.width*2/3) ,2,"#FFF" , {x:x , y:y});
-                bigbooms.push(bigboom)
+                bigbooms.push(bigboom);
             }
             else {
                 var bigboom = new Boom(getRandom(canvas.width/3,canvas.width*2/3) ,2,"#FFF" , {x:canvas.width/2 , y:200} , document.querySelectorAll(".shape")[parseInt(getRandom(0, document.querySelectorAll(".shape").length))]);
-                bigbooms.push(bigboom)
+                bigbooms.push(bigboom);
             }
             lastTime = newTime;
-            console.log(bigbooms)
+            console.log(bigbooms);
         }
 
         stars.foreach(function(){
