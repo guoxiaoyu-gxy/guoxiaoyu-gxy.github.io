@@ -116,7 +116,7 @@ collection: portfolio
         for(var i=0;i<this.length;i++){
             if(this[i]!==null) callback.apply(this[i] , [i])
         }
-    }
+    };
 
     var raf = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (callback) { window.setTimeout(callback, 1000 / 60); };
 
