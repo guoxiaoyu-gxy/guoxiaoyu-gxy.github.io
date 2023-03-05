@@ -47,68 +47,9 @@ collection: portfolio
     ocas.height = canvas.height = 700;
     var bigbooms = [];
 
-    window.onload = function(){
-        initAnimate();
-    };
-
-    function initAnimate(){
-        drawBg();
-
-        lastTime = new Date();
-        animate();
-    }
 
     var lastTime;
-    function animate(){
-        ctx.save();
-        ctx.fillStyle = "rgba(0,5,24,0.1)";
-        ctx.fillRect(0,0,canvas.width,canvas.height);
-        ctx.restore();
 
-
-        var newTime = new Date();
-        if(newTime-lastTime>500+(window.innerHeight-767)/2){
-            var random = Math.random()*100>2?true:false;
-            var x = getRandom(canvas.width/5 , canvas.width*4/5);
-            var y = getRandom(50 , 200);
-            if(random){
-                var bigboom = new Boom(getRandom(canvas.width/3,canvas.width*2/3) ,2,"#FFF" , {x:x , y:y});
-                bigbooms.push(bigboom)
-            }
-            else {
-                var bigboom = new Boom(getRandom(canvas.width/3,canvas.width*2/3) ,2,"#FFF" , {x:canvas.width/2 , y:200} , document.querySelectorAll(".shape")[parseInt(getRandom(0, document.querySelectorAll(".shape").length))]);
-                bigbooms.push(bigboom)
-            }
-            lastTime = newTime;
-            console.log(bigbooms)
-        }
-
-        stars.foreach(function(){
-            this.paint();
-        });
-
-        drawMoon();
-
-        bigbooms.foreach(function(index){
-            var that = this;
-            if(!this.dead){
-                this._move();
-                this._drawLight();
-            }
-            else{
-                this.booms.foreach(function(index){
-                    if(!this.dead) {
-                        this.moveTo(index);
-                    }
-                    else if(index === that.booms.length-1){
-                        bigbooms[bigbooms.indexOf(that)] = null;
-                    }
-                })
-            }
-        });
-
-        raf(animate);
-    }
 
     function drawMoon(){
         var moon = document.getElementById("moon");
@@ -365,6 +306,67 @@ collection: portfolio
             }
             this.paint();
         }
+    }
+    function animate(){
+        ctx.save();
+        ctx.fillStyle = "rgba(0,5,24,0.1)";
+        ctx.fillRect(0,0,canvas.width,canvas.height);
+        ctx.restore();
+
+
+        var newTime = new Date();
+        if(newTime-lastTime>500+(window.innerHeight-767)/2){
+            var random = Math.random()*100>2?true:false;
+            var x = getRandom(canvas.width/5 , canvas.width*4/5);
+            var y = getRandom(50 , 200);
+            if(random){
+                var bigboom = new Boom(getRandom(canvas.width/3,canvas.width*2/3) ,2,"#FFF" , {x:x , y:y});
+                bigbooms.push(bigboom)
+            }
+            else {
+                var bigboom = new Boom(getRandom(canvas.width/3,canvas.width*2/3) ,2,"#FFF" , {x:canvas.width/2 , y:200} , document.querySelectorAll(".shape")[parseInt(getRandom(0, document.querySelectorAll(".shape").length))]);
+                bigbooms.push(bigboom)
+            }
+            lastTime = newTime;
+            console.log(bigbooms)
+        }
+
+        stars.foreach(function(){
+            this.paint();
+        });
+
+        drawMoon();
+
+        bigbooms.foreach(function(index){
+            var that = this;
+            if(!this.dead){
+                this._move();
+                this._drawLight();
+            }
+            else{
+                this.booms.foreach(function(index){
+                    if(!this.dead) {
+                        this.moveTo(index);
+                    }
+                    else if(index === that.booms.length-1){
+                        bigbooms[bigbooms.indexOf(that)] = null;
+                    }
+                })
+            }
+        });
+
+        raf(animate);
+    }
+
+    window.onload = function(){
+        initAnimate();
+    };
+
+    function initAnimate(){
+        drawBg();
+
+        lastTime = new Date();
+        animate();
     }
 </script>
 </body>
