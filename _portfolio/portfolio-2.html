@@ -159,7 +159,7 @@ collection: portfolio
                 var a = getRandom(-Math.PI, Math.PI);
                 var x = getRandom(0, fanwei) * Math.cos(a) + this.x;
                 var y = getRandom(0, fanwei) * Math.sin(a) + this.y;
-                var radius = getRandom(0 , 2)
+                var radius = getRandom(0 , 2);
                 var frag = new Frag(this.x , this.y , radius , color , x , y );
                 this.booms.push(frag);
             }
