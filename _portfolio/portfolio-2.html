@@ -101,7 +101,7 @@ collection: portfolio
         this.theta = 0;
         this.dead = false;
         this.ba = parseInt(getRandom(80 , 200));
-    }
+    };
     Boom.prototype = {
         _paint:function(){
             ctx.save();
@@ -179,7 +179,7 @@ collection: portfolio
                 }
             })
         }
-    }
+    };
 
     function putValue(canvas , context , ele , dr , callback){
         context.clearRect(0,0,canvas.width,canvas.height);
