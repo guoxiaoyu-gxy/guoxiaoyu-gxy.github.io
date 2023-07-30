@@ -15,3 +15,4 @@ Research Interests
 ======
 Complex Question Answering, Natural Language Reasoning, and Multi-modal Learning.
 
+My Current **CV** can be downloaded [here](https://guoxiaoyu-gxy.github.io/files/Xiaoyu_Guo_CV.pdf).
