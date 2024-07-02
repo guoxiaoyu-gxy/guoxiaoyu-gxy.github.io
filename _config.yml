@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Xiaoyu Guo"
+title                    : "Xiao-Yu Guo"
 title_separator          : "-"
-name                     : &name "Xiaoyu Guo"
+name                     : &name "Xiao-Yu Guo"
 description              : &description "PhD Candidate"
 url                      : https://guoxiaoyu-gxy.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Xiaoyu Guo"
+  name             : "Xiao-Yu Guo"
   avatar           : "profile photo.jpeg"
-  bio              : "Phd Student at Monash University"
+  bio              : "Postdoc at AIML"
   location         : "2.51 Woodside building"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"

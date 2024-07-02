@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Xiao-Yu's CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,14 +8,19 @@ redirect_from:
 ---
 
 {% include base_path %}
+Employment
+======
+* Nov. 2023 ~ Now                                                                    
+  * Research Fellow / Postdoc Position in [Australian Institute for Machine Learning (AIML)](https://www.adelaide.edu.au/aiml/). Supervisor: [Dr. Ehsan Abbasnejad](https://ehsanabb.github.io/)
+
 
 Education
 ======
-* Mar. 2020 - now
-  * PhD student in [Faculty of Information Technology (FIT)](https://www.monash.edu/it), [Monash University](https://www.monash.edu/). Supervisor: [Yuan-Fang Li](https://users.monash.edu.au/~yli/) and [Gholamreza Haffari](https://users.monash.edu.au/~gholamrh/).
+* Mar. 2020 - Mar. 2024
+  * PhD student in [Faculty of Information Technology (FIT)](https://www.monash.edu/it), [Monash University](https://www.monash.edu/). Supervisor: [Assoc. Prof. Yuan-Fang Li](https://users.monash.edu.au/~yli/) and [Prof. Gholamreza Haffari](https://users.monash.edu.au/~gholamrh/).
 
 * Sep. 2016 - Jan. 2019
-  * Master in [School of Computer Science and Engineering (SCSE)](http://scse.buaa.edu.cn/English/Home.htm), [Beihang University](https://ev.buaa.edu.cn/). Supervisor: [Hui Zhang](https://teacher.buaa.edu.cn/zhanghui1/en/index.htm)
+  * Master in [School of Computer Science and Engineering (SCSE)](http://scse.buaa.edu.cn/English/Home.htm), [Beihang University](https://ev.buaa.edu.cn/). Supervisor: [Assoc. Prof. Hui Zhang](https://teacher.buaa.edu.cn/zhanghui1/en/index.htm)
 
 * Sep. 2012 - Jul. 2016
   * Bachelor in [School of Computer Science and Engineering (SCSE)](http://scse.buaa.edu.cn/English/Home.htm), [Beihang University](https://ev.buaa.edu.cn/).
