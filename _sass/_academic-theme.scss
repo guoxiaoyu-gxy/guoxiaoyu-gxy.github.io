@@ -320,6 +320,10 @@ a {
     padding: 0 1rem;
   }
 
+  #main.has-sidebar {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   #main.has-sidebar > .page,
   #main.has-sidebar > .archive,
   #main.has-sidebar > .sidebar {
