@@ -11,7 +11,7 @@ redirect_from:
 
 [Download my CV (PDF)](/files/Xiaoyu_Guo_CV.pdf)
 
-VIC, Australia · [xiaoyu.guo@gmail.com](mailto:xiaoyu.guo@gmail.com) · [Google Scholar](https://scholar.google.com/citations?user=KIcxROAAAAAJ&hl=en) · [LinkedIn](https://www.linkedin.com/in/xiao-yu-guo/)
+VIC, Australia · [mailto.xiaoyu.guo@gmail.com](mailto:mailto.xiaoyu.guo@gmail.com) · [Google Scholar](https://scholar.google.com/citations?user=KIcxROAAAAAJ&hl=en) · [LinkedIn](https://www.linkedin.com/in/xiao-yu-guo/)
 
 ## Research Profile
 
