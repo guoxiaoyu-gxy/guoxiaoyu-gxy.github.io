@@ -1,18 +1,29 @@
 ---
+layout: about
+title: About
 permalink: /
-title: "Xiao-Yu Guo"
-excerpt: "Xiao-Yu Guo"
-author_profile: true
-redirect_from: 
+subtitle: AI Researcher · PhD in Artificial Intelligence, Monash University
+nav_order: 1
+redirect_from:
   - /about/
   - /about.html
+profile:
+  align: right
+  image: profile.jpeg
+  image_circular: true
+selected_papers: true
+social: true
+announcements:
+  enabled: false
+latest_posts:
+  enabled: false
+biography: |
+  I am an AI researcher with experience across academia and industry. My work focuses on natural language processing, large language models, complex reasoning, multimodal learning, and responsible AI. I am particularly interested in building trustworthy, efficient, and generalisable AI systems.
+
+  Previously, I worked as a Senior Applied Scientist at [Oracle Australia](https://www.oracle.com/au/) (January 2025–May 2026), developing medical-domain agent workflows, scalable AI solutions, and methods for model evaluation and validation. Before that, I was a Postdoctoral Research Fellow at the [Australian Institute for Machine Learning (AIML)](https://www.adelaide.edu.au/aiml/) (November 2023–January 2025), working with [Dr. Ehsan Abbasnejad](https://ehsanabb.github.io/) on model robustness, reliability, and responsible AI.
+
+  I completed my PhD in Artificial Intelligence at [Monash University](https://www.monash.edu/) in April 2024, under the supervision of [Yuan-Fang Li](https://liyuanfang.github.io/) and [Gholamreza Haffari](https://users.monash.edu.au/~gholamrh/). My thesis, [*Complex Question Answering: from Data to Method*](https://bridges.monash.edu/articles/thesis/Complex_Question_Answering_from_Data_to_Method/25428691), explored reasoning with neural module networks and language models under data bias and distribution challenges.
 ---
 
-I am currently a research fellow at [Australian Institute for Machine Learning (AIML)](https://www.adelaide.edu.au/aiml/), happily working with [Dr. Ehsan Abbasnejad](https://ehsanabb.github.io/). 
-I did my PhD at the [Monash University NLP Group](https://www.monash.edu/it/dsai/vision-language), under the supervision of [Assoc. Prof. Yuan-Fang Li](https://users.monash.edu.au/~yli/) and [Prof. Gholamreza Haffari](https://users.monash.edu.au/~gholamrh/).
-
-Research Interests
-======
-Complex Question Answering, Natural Language Reasoning, and Multi-modal Learning.
-
-My Current **CV** can be downloaded [here](https://guoxiaoyu-gxy.github.io/files/Xiaoyu_Guo_CV.pdf).
+## Research Interests
+Natural language processing and large language models; complex question answering and reasoning; multimodal learning; model robustness, fairness, and generalisation; responsible AI.

@@ -1,0 +1,142 @@
+/******************************************************************************
+ * Content
+ ******************************************************************************/
+
+body {
+  padding-bottom: 70px;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    scroll-margin-top: 66px;
+  }
+}
+
+body.fixed-top-nav {
+  // Add some padding for the nav-bar.
+  padding-top: 56px;
+}
+
+body.sticky-bottom-footer {
+  // Remove padding below footer.
+  padding-bottom: 0;
+}
+
+.container {
+  max-width: $max-content-width;
+}
+
+// Profile
+.profile {
+  img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center 35%;
+  }
+}
+
+// TODO: redefine content layout.
+
+/******************************************************************************
+ * Publications
+ ******************************************************************************/
+
+// TODO: redefine publications layout.
+
+/*****************************************************************************
+* Projects
+*****************************************************************************/
+
+// TODO: redefine projects layout.
+
+// Keep the introduction beside the portrait, above the research sections.
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  .about-introduction {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .biography p:last-child {
+    margin-bottom: 0;
+  }
+
+  .post-title {
+    margin: 0 0 0.5rem;
+    min-width: 0;
+  }
+
+  .profile {
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  figure {
+    margin: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-header {
+    gap: 1rem;
+
+    .profile {
+      width: 100px;
+    }
+
+    .post-title {
+      font-size: 2rem;
+    }
+  }
+}
+
+.presentations {
+  .presentation {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .presentation-venue {
+    color: var(--global-text-color-light);
+    margin-bottom: 0.75rem;
+  }
+
+  .presentation-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .btn {
+      margin: 0;
+      color: var(--global-theme-color);
+      border: 1px solid var(--global-theme-color);
+      text-transform: none;
+
+      &:hover {
+        color: var(--global-bg-color);
+        background-color: var(--global-theme-color);
+      }
+    }
+  }
+}

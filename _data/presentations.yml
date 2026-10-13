@@ -1,0 +1,33 @@
+- title: 'DeSIQ: Towards an Unbiased, Challenging Benchmark for Social Intelligence Understanding'
+  year: 2023
+  venue: EMNLP 2023
+  paper: https://doi.org/10.18653/v1/2023.emnlp-main.191
+  recordings:
+    - label: Watch presentation
+      url: https://underline.io/lecture/89345-desiq-towards-an-unbiased-challenging-benchmark-for-social-intelligence-understanding-video
+
+- title: Teaching Neural Module Networks to Do Arithmetic
+  year: 2022
+  venue: COLING 2022
+  paper: https://aclanthology.org/2022.coling-1.129/
+  recordings:
+    - label: Watch presentation
+      url: https://underline.io/lecture/60473-teaching-neural-module-networks-to-do-arithmetic
+
+- title: Improving Numerical Reasoning Skills in the Modular Approach for Complex Question Answering on Text
+  year: 2021
+  venue: EMNLP 2021
+  paper: https://doi.org/10.18653/v1/2021.findings-emnlp.231
+  recordings:
+    - label: Watch presentation
+      url: https://underline.io/lecture/39625-improving-numerical-reasoning-skills-in-the-modular-approach-for-complex-question-answering-on-text
+    - label: Additional recording
+      url: https://underline.io/lecture/38504-improving-numerical-reasoning-skills-in-the-modular-approach-for-complex-question-answering-on-text
+
+- title: Understanding Unnatural Questions Improves Reasoning over Text
+  year: 2020
+  venue: COLING 2020
+  paper: https://doi.org/10.18653/v1/2020.coling-main.434
+  recordings:
+    - label: Watch presentation
+      url: https://underline.io/lecture/5666-understanding-unnatural-questions-improves-reasoning-over-text
