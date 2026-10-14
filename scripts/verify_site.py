@@ -23,11 +23,11 @@ class Links(HTMLParser):
 for page in site.rglob('*.html'):
     parser = Links()
     parser.page = page
-    parser.feed(page.read_text())
+    parser.feed(page.read_text(encoding='utf-8'))
 assert not missing, f'Missing local targets: {sorted(missing)}'
 
 for path in (
-    'index.html', 'publications/index.html', 'presentations/index.html', 'cv/index.html', 'about/index.html',
+    'index.html', 'publications/index.html', 'presentations/index.html', 'people/index.html', 'cv/index.html', 'about/index.html',
     'about.html', 'resume.html', 'resume/index.html', 'publication/index.html',
     'publication/2022-COLING.html', 'publication/2023-EMNLP.html',
     'files/Xiaoyu_Guo_CV.pdf', 'sitemap.xml',
@@ -36,14 +36,21 @@ for path in (
 for section in ('talks', 'teaching', 'portfolio', 'posts', 'markdown', 'talkmap'):
     assert not (site / section).exists(), f'Sample section still published: {section}'
 
-publications = (site / 'publications/index.html').read_text()
-bibliography = Path('_bibliography/papers.bib').read_text()
+publications = (site / 'publications/index.html').read_text(encoding='utf-8')
+bibliography = Path('_bibliography/papers.bib').read_text(encoding='utf-8')
 entry_count = len(re.findall(r'^@(?:article|inproceedings)\{', bibliography, re.M))
 selected_count = len(re.findall(r'selected\s*=\s*\{true\}', bibliography))
 assert publications.count('class="title"') == entry_count, 'Publication count differs from bibliography'
-assert (site / 'index.html').read_text().count('class="title"') == selected_count, 'Selected paper count differs from bibliography'
+assert (site / 'index.html').read_text(encoding='utf-8').count('class="title"') == selected_count, 'Selected paper count differs from bibliography'
+people = (site / 'people/index.html').read_text(encoding='utf-8')
+for name in ('Jiayi Chen', 'Peng Chen', 'Yuan-Fang Li'):
+    assert name in people, f'Missing person: {name}'
+for key in ('2022-COLING', 'chen-etal-2024-mitigating'):
+    assert f'/publications/#{key}' in people, f'Missing People publication link: {key}'
+    assert f'id="{key}"' in publications, f'Missing publication anchor: {key}'
 for page in ('index.html', 'publications/index.html', 'cv/index.html'):
-    text = (site / page).read_text()
+    text = (site / page).read_text(encoding='utf-8')
+    assert 'href="/people/"' in text, f'Missing People navigation in {page}'
     assert '{{version}}' not in text, f'Unresolved library version in {page}'
     assert 'Write your biography here' not in text, f'Sample biography in {page}'
 print(f'PASS: migrated pages, redirects, PDF, {entry_count} publications, {selected_count} selected papers, and local links; sample sections absent.')
