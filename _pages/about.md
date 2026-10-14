@@ -22,7 +22,7 @@ biography: |
 
   Previously, I worked as a Senior Applied Scientist at [Oracle Australia](https://www.oracle.com/au/) (January 2025–May 2026), developing medical-domain agent workflows, scalable AI solutions, and methods for model evaluation and validation. Before that, I was a Postdoctoral Research Fellow at the [Australian Institute for Machine Learning (AIML)](https://www.adelaide.edu.au/aiml/) (November 2023–January 2025), working with [Dr. Ehsan Abbasnejad](https://ehsanabb.github.io/) on model robustness, reliability, and responsible AI.
 
-  I completed my PhD in Artificial Intelligence at [Monash University](https://www.monash.edu/) in April 2024, under the supervision of [Yuan-Fang Li](https://liyuanfang.github.io/) and [Gholamreza Haffari](https://users.monash.edu.au/~gholamrh/). My thesis, [*Complex Question Answering: from Data to Method*](https://bridges.monash.edu/articles/thesis/Complex_Question_Answering_from_Data_to_Method/25428691), explored reasoning with neural module networks and language models under data bias and distribution challenges.
+  I completed my PhD in Artificial Intelligence at [Monash University](https://www.monash.edu/) in April 2024, under the supervision of [Yuan-Fang Li](https://liyuanfang.github.io/) and [Gholamreza Haffari](https://rezahaffari.github.io/HomePage/HomePage.html). My thesis, [*Complex Question Answering: from Data to Method*](https://bridges.monash.edu/articles/thesis/Complex_Question_Answering_from_Data_to_Method/25428691), explored reasoning with neural module networks and language models under data bias and distribution challenges.
 ---
 
 ## Research Interests
